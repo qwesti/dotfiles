@@ -8,9 +8,11 @@ set -gx VISUAL nvim
 set -gx SUDO_EDITOR nvim
 set -gx BROWSER qutebrowser
 set -gx PAGER bat
+set -gx SSH_AUTH_SOCK /home/qwest/.ssh/agent.sock
 
 set -gx DOTNET_ROOT /usr/share/dotnet
 set -p PATH $HOME/.dotnet/tools
+set -p PATH $HOME/.local/bin
 
 set -gx BAT_THEME ansi
 set -gx FZF_DEFAULT_OPTS "

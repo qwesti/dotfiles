@@ -8,7 +8,7 @@ command -v paru &>/dev/null || {
   rm -rf /tmp/paru
 }
 
-bash "./install-all-packages.sh"
+bash "./install-all-packages-from-the-packages-file.sh"
 bash "./update-hyprland-config.sh"
 bash "./symlink-dotfiles.sh"
 
@@ -26,6 +26,9 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
     nvm install latest
     nvm install lts
 '
+
+#Install claude code
+curl -fsSL https://claude.ai/install.sh | bash
 
 #Install yazi plugins
 ya pkg install
